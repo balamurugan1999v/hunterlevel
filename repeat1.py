@@ -13,5 +13,9 @@ for i in range(0,n-1):
       break
   if b>=1 and s1[i] not in s2:
     s2.append(s1[i])
-for i in s2:
-  print(i,end=" ")
+z=len(s2)
+if z==0:
+  print("unique")
+else:
+  for i in s2:
+    print(i,end=" ")
