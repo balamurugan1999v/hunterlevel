@@ -9,12 +9,17 @@ for i in num:
     r+=1
 b=a
 n=0
+tt=0
 for i in range(0,a,1):
   for j in range(i,a):
     if j!=i:
       if s1[i]==s1[j]:
+        tt=1
         while (i>=n and j<b):
           n=i
           b=j
           c=s1[i]
-print(c)
+if tt==1:
+  print(c)
+else:
+  print("unique")
